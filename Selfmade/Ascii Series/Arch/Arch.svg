@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3840"
+   height="2160"
+   viewBox="0 0 1016 571.5"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="Arch.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="1703.6854"
+     inkscape:cy="780.02717"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="1591"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient421"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#32bcff;stop-opacity:1;"
+         offset="0"
+         id="stop421" />
+      <stop
+         style="stop-color:#16008b;stop-opacity:1;"
+         offset="1"
+         id="stop422" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient421"
+       id="linearGradient422"
+       x1="462.04031"
+       y1="190.51401"
+       x2="810.49292"
+       y2="593.92395"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78240689,0,0,0.78240689,110.06442,38.930901)" />
+  </defs>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.1734614,-1.0867307)">
+    <rect
+       style="fill:#333333;fill-opacity:1;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       id="rect1"
+       width="1016.0272"
+       height="572.05811"
+       x="-2.1734614"
+       y="1.411222"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:18.3243px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:url(#linearGradient422);fill-opacity:1;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       x="511.32474"
+       y="71.368683"
+       id="text167"><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="71.368683"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan457">                   -`                   </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="94.274055"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan475">                  .o+`                  </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="117.17944"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan476">                 `ooo/                  </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="140.08481"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan477">                `+oooo:                 </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="162.99019"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan478">               `+oooooo:                </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="185.89557"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan479">               -+oooooo+:               </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="208.80093"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan480">             `/:-:++oooo+:              </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="231.70631"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan481">            `/++++/+++++++:             </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="254.61169"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan482">           `/++++++++++++++:            </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="277.51706"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan483">          `/+++oooooooooooo/`           </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="300.42245"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan484">         ./ooosssso++osssssso+`         </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="323.32782"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan485">        .oossssso-````/ossssss+`        </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="346.23318"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan486">       -osssssso.      :ssssssso.       </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="369.13858"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan487">      :osssssss/        osssso+++.      </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="392.04395"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan488">     /ossssssss/        +ssssooo/-      </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="414.94931"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan489">   `/ossssso+/:-        -:/+osssso+-    </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="437.85471"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan490">  `+sso+:-`                 `.-/+oso:   </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="460.76007"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan491"> `++:.                           `-/+/  </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="483.66544"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan492"> .`                                 `/  </tspan><tspan
+         sodipodi:role="line"
+         x="511.32474"
+         y="506.57083"
+         style="fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         id="tspan493" /></text>
+  </g>
+</svg>
