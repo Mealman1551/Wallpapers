@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3840"
+   height="2160"
+   viewBox="0 0 1016 571.5"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="OpenSUSE2.svg"
+   inkscape:export-filename="NixOS.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.32"
+     inkscape:cx="1571.875"
+     inkscape:cy="907.8125"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="1591"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient421"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#97ff09;stop-opacity:1;"
+         offset="0"
+         id="stop421" />
+      <stop
+         style="stop-color:#00ed94;stop-opacity:1;"
+         offset="1"
+         id="stop422" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient421"
+       id="linearGradient422"
+       x1="27.402304"
+       y1="52.292233"
+       x2="845.11859"
+       y2="716.97638"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.40738923,0,0,0.40738923,298.32664,67.196089)" />
+  </defs>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.1734614,-1.0867307)">
+    <rect
+       style="fill:#333333;fill-opacity:1;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       id="rect1"
+       width="1016.0272"
+       height="572.05811"
+       x="-2.1734614"
+       y="1.411222"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.54121px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:url(#linearGradient422);fill-opacity:1;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       x="507.25772"
+       y="84.086014"
+       id="text167"
+       inkscape:export-filename="NixOS.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="507.25772"
+         y="84.086014"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan40">                                                                  </tspan><tspan
+         x="507.25772"
+         y="96.012527"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan16">                                                                  </tspan><tspan
+         x="507.25772"
+         y="107.93904"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan17">                           ============                           </tspan><tspan
+         x="507.25772"
+         y="119.86555"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan18">                     ========================                     </tspan><tspan
+         x="507.25772"
+         y="131.79207"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan19">                  ==============================                  </tspan><tspan
+         x="507.25772"
+         y="143.71858"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan20">               ====================================               </tspan><tspan
+         x="507.25772"
+         y="155.6451"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan21">             ========================================             </tspan><tspan
+         x="507.25772"
+         y="167.57161"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan22">           ======      ================================           </tspan><tspan
+         x="507.25772"
+         y="179.49811"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan23">           ======               ========================          </tspan><tspan
+         x="507.25772"
+         y="191.42462"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan24">                                       ===================        </tspan><tspan
+         x="507.25772"
+         y="203.35114"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan25">                                            ===============       </tspan><tspan
+         x="507.25772"
+         y="215.27765"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan26">                                    ======     ============       </tspan><tspan
+         x="507.25772"
+         y="227.20416"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan27">                                 ============    ===========      </tspan><tspan
+         x="507.25772"
+         y="239.13068"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan28">                                ====       ====   ===========     </tspan><tspan
+         x="507.25772"
+         y="251.05719"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan29">                               ===     ===  ===    ==========     </tspan><tspan
+         x="507.25772"
+         y="262.9837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan30">                               ===    =====  ===   ===========    </tspan><tspan
+         x="507.25772"
+         y="274.91022"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan31">                               ===           ===    ==========    </tspan><tspan
+         x="507.25772"
+         y="286.83673"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan32">                               ===          ===      =========    </tspan><tspan
+         x="507.25772"
+         y="298.76324"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan33">                     ==         ====       ====      =========    </tspan><tspan
+         x="507.25772"
+         y="310.68976"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan34">                      ====       ============         ========    </tspan><tspan
+         x="507.25772"
+         y="322.61627"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan35">                       =======       =====           =========    </tspan><tspan
+         x="507.25772"
+         y="334.54279"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan36">                         =========               ============     </tspan><tspan
+         x="507.25772"
+         y="346.4693"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan37">                             ======================== =======     </tspan><tspan
+         x="507.25772"
+         y="358.39581"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan38">                                  ===============    =======      </tspan><tspan
+         x="507.25772"
+         y="370.32233"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan39">                                                    ========      </tspan><tspan
+         x="507.25772"
+         y="382.24884"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan41">                                                  =========       </tspan><tspan
+         x="507.25772"
+         y="394.17535"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan42">                                              ============        </tspan><tspan
+         x="507.25772"
+         y="406.10187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan43">                                        ================          </tspan><tspan
+         x="507.25772"
+         y="418.02838"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan44">           ============================================           </tspan><tspan
+         x="507.25772"
+         y="429.9549"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan45">             ========================================             </tspan><tspan
+         x="507.25772"
+         y="441.88141"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan46">               ====================================               </tspan><tspan
+         x="507.25772"
+         y="453.80792"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan47">                  ==============================                  </tspan><tspan
+         x="507.25772"
+         y="465.73444"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan48">                     ========================                     </tspan><tspan
+         x="507.25772"
+         y="477.66092"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan49">                           ============                           </tspan><tspan
+         x="510.12009"
+         y="489.58743"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';fill:url(#linearGradient422);fill-opacity:1;stroke-width:0"
+         sodipodi:role="line"
+         id="tspan50">                                                                  </tspan></text>
+  </g>
+</svg>
