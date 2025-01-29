@@ -18,4 +18,4 @@ Free to use but please, please, for the sake of god, mention me, Mealman1551.
 
 I don't make a lawsuit of it, but I'm the original creator so yea... Be decent and do me a favor and mention me as "Mealman155".
 
-###### © Mealman1551
+###### © 2025 Mealman1551
