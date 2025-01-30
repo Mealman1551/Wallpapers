@@ -2,16 +2,39 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="160000"
-   height="100000"
+   width="16000"
+   height="10000"
    id="svg1306"
    version="1.0"
+   sodipodi:docname="Debian Etch Wallpaper.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview145"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="256"
+     inkscape:cx="15999.926"
+     inkscape:cy="10000.172"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1306" />
   <defs
      id="defs1308">
     <linearGradient
@@ -615,7 +638,8 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1">
+     id="layer1"
+     transform="matrix(0.1000001,0,0,0.1000001,-1.272544e-4,0)">
     <g
        id="g4565"
        transform="matrix(99.999949,0,0,99.999949,0.0139982,0)">
@@ -696,7 +720,7 @@
              id="path2495" />
           <polygon
              transform="matrix(7.1104763,0,0,-6.6194836,-1454.2873,3069.4518)"
-             points="320.6,440.37 320.64,440.45 319.97,440.31 "
+             points="319.97,440.31 320.6,440.37 320.64,440.45 "
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:0.25;fill-rule:nonzero;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.433;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.25;marker:none;marker-start:none;marker-mid:none;marker-end:none"
              id="polygon2497" />
           <path
