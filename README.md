@@ -16,7 +16,7 @@ Free to use but please, please, for the sake of god, mention me, Mealman1551.
 
 ### What if Selfmade images are not mentioned with my name (Mealman1551)?
 
-I don't make a lawsuit of it, but I'm the original creator so yea... Be decent and do me a favor and mention me as "Mealman155".
+I don't make a lawsuit of it, but I'm the original creator so yea... Be decent and do me a favor and mention me as "Mealman1551".
 
 ## Updates
 
