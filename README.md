@@ -20,6 +20,6 @@ I don't make a lawsuit of it, but I'm the original creator so yea... Be decent a
 
 ## Updates
 
-The wallpapers are updated regularly, the folder: Main/I found/Landscapes is updated very regularly.
+The wallpapers are updated regularly.
 
 ###### © 2025 Mealman1551
