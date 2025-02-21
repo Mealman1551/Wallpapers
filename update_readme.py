@@ -1,6 +1,6 @@
 import requests
 import os
-from urllib.parse import quote
+from urllib.parse import quote_plus  # Gebruik quote_plus voor betere URL-encoding
 
 # Configuratie
 repo_owner = "mealman1551"
@@ -20,8 +20,8 @@ def get_image_urls():
         for file in data['tree']:
             # Alleen afbeelding-bestanden (jpg, png, jpeg)
             if file['path'].endswith(('.jpg', '.png', '.jpeg')):
-                # Encodeer het pad om spaties correct te verwerken
-                encoded_path = quote(file['path'])
+                # Encodeer het pad om spaties en speciale tekens correct te verwerken
+                encoded_path = quote_plus(file['path'])
                 raw_url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{encoded_path}"
                 image_urls.append(raw_url)
 
