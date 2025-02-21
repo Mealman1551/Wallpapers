@@ -1,5 +1,6 @@
 import requests
 import os
+from urllib.parse import quote
 
 # Configuratie
 repo_owner = "mealman1551"
@@ -19,7 +20,9 @@ def get_image_urls():
         for file in data['tree']:
             # Alleen afbeelding-bestanden (jpg, png, jpeg)
             if file['path'].endswith(('.jpg', '.png', '.jpeg')):
-                raw_url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{file['path']}"
+                # Encodeer het pad om spaties correct te verwerken
+                encoded_path = quote(file['path'])
+                raw_url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{encoded_path}"
                 image_urls.append(raw_url)
 
         # Print de afbeelding-URLs voor controle
@@ -39,7 +42,8 @@ def update_readme(image_urls):
     with open(readme_path, "r", encoding="utf-8") as readme_file:
         readme_content = readme_file.readlines()
 
-    # Voeg de nieuwe afbeeldingen toe in een tabelvorm
+    # Zoek het punt waar de nieuwe content moet worden toegevoegd (na de bestaande inhoud)
+    # We voegen de nieuwe afbeeldingen toe direct onder de titel en andere informatie
     markdown_start = "| Column 1 | Column 2 | Column 3 | Column 4 |\n|---------|---------|---------|---------|\n"
     markdown_row = "|"
     for i, url in enumerate(image_urls):
@@ -50,8 +54,9 @@ def update_readme(image_urls):
     if markdown_row != "|":
         markdown_start += markdown_row + "\n"
 
-    # Voeg de nieuwe inhoud bovenaan je README.md toe
-    readme_content.insert(0, markdown_start)
+    # Zoek de eerste sectie van de README om de nieuwe inhoud toe te voegen
+    # Dit voegt de markdown direct onder de bestaande tekst toe
+    readme_content.append(markdown_start)
 
     # Schrijf de bijgewerkte README.md
     with open(readme_path, "w", encoding="utf-8") as readme_file:
