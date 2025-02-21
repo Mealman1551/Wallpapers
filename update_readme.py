@@ -1,4 +1,5 @@
 import os
+import requests
 
 # Map van je lokale GitHub repository
 repo_path = "d:/Github Git Repo clones/Wallpapers"
@@ -17,6 +18,23 @@ def find_images_in_repo(repo_path):
                 image_paths.append(os.path.join(root, file))
     
     return image_paths
+
+# Functie om de raw URL van een afbeelding te krijgen
+def get_raw_url(img_path):
+    relative_path = img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')
+    image_url = f"https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/{relative_path}"
+    
+    # Probeer de URL te bereiken en kijk of deze werkt
+    try:
+        response = requests.get(image_url)
+        if response.status_code == 200:
+            return image_url
+        else:
+            print(f"URL voor {img_path} geeft een fout {response.status_code}")
+            return None
+    except requests.RequestException as e:
+        print(f"Fout bij het ophalen van {img_path}: {e}")
+        return None
 
 # Functie om de inhoud van de README.md bij te werken
 def update_readme_with_images(readme_path, image_urls):
@@ -39,9 +57,11 @@ def update_readme_with_images(readme_path, image_urls):
     for img_path in image_urls:
         # Vervang spaties door %20 voor geldige URL
         img_path = img_path.replace(' ', '%20')
-        # Maak de GitHub raw URL aan met het juiste pad
-        relative_path = img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')
-        image_url = f"https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/{relative_path}"
+        
+        # Haal de werkende raw URL op
+        image_url = get_raw_url(img_path)
+        if not image_url:
+            continue  # Als de URL niet werkt, ga verder met de volgende afbeelding
 
         if image_counter % len(columns) == 0 and image_counter != 0:
             new_table += "\n"
