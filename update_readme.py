@@ -1,6 +1,4 @@
 import os
-import re
-import requests
 
 # Map van je lokale GitHub repository
 repo_path = "d:/Github Git Repo clones/Wallpapers"
@@ -24,11 +22,15 @@ def find_images_in_repo(repo_path):
 def update_readme_with_images(readme_path, image_urls):
     with open(readme_path, "r", encoding="utf-8") as file:
         readme_content = file.read()
-    
-    # Zoek de bestaande afbeeldingen en vervang deze
-    image_table_pattern = r"(\|.*\|(?:\n|\r\n)*)"
-    current_images = re.findall(image_table_pattern, readme_content)
-    
+
+    # Scheid de header van de tabel met afbeeldingen
+    header_end = readme_content.find("| Column 1 |")  # Dit is de lijn waar de kolomheader begint
+    if header_end == -1:  # Als er geen tabel is, voeg dan de nieuwe afbeeldingen bovenaan
+        header_end = len(readme_content)
+
+    before_images_content = readme_content[:header_end]  # Bovenkant behouden
+    after_images_content = readme_content[header_end:]  # De rest (waar de afbeeldingen komen) behouden
+
     # Maak nieuwe kolommen met afbeeldingen
     columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4']
     new_table = "| " + " | ".join(columns) + " |\n| " + " | ".join(['---' for _ in columns]) + " |\n"
@@ -37,7 +39,9 @@ def update_readme_with_images(readme_path, image_urls):
     for img_path in image_urls:
         # Vervang spaties door %20 voor geldige URL
         img_path = img_path.replace(' ', '%20')
-        image_url = f"https://raw.githubusercontent.com/mealman1551/wallpapers/main/{img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')}"
+        # Maak de GitHub raw URL aan met het juiste pad
+        relative_path = img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')
+        image_url = f"https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/{relative_path}"
 
         if image_counter % len(columns) == 0 and image_counter != 0:
             new_table += "\n"
@@ -45,9 +49,8 @@ def update_readme_with_images(readme_path, image_urls):
         new_table += f"| ![Image]({image_url}) "
         image_counter += 1
 
-    # Plaats de nieuwe afbeeldingen bovenaan de README, onder de bestaande tekst
-    before_images_content = readme_content.split('| Column 1 |')[0]  # Neem de tekst boven de afbeeldingstabel
-    updated_readme_content = before_images_content + new_table + '\n' + ''.join(current_images[1:])  # Voeg de nieuwe tabel toe
+    # Voeg de nieuwe tabel toe na de header en vóór de rest van de inhoud
+    updated_readme_content = before_images_content + new_table + after_images_content
 
     # Sla de bijgewerkte README op
     with open(readme_path, "w", encoding="utf-8") as file:
