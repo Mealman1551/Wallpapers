@@ -1,74 +1,97 @@
 import os
+import glob
 import requests
 
-# Het juiste pad naar je lokale repository
-repo_path = r"D:/Github Git Repo clones/Wallpapers"  # Pas dit pad aan
+# Pad naar je lokale GitHub repository
+repo_path = r"D:\Github Git Repo clones\Wallpapers"
 
-# Functie om de raw URL van een afbeelding te krijgen, met spaties omgezet naar %20
-def get_raw_url(img_path):
-    # Vervang het lokale pad door de GitHub raw URL
-    relative_path = img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')
-    
-    # Vervang spaties door %20 voor de juiste URL-encoding
-    relative_path = relative_path.replace(' ', '%20')
-    
-    image_url = f"https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/{relative_path}"
-    
-    return image_url
+# Pad naar de README.md bestand
+readme_path = os.path.join(repo_path, 'README.md')
 
-# Functie om te controleren of een URL bestaat (geen 404)
-def url_exists(url):
-    try:
-        response = requests.head(url)
-        return response.status_code == 200
-    except requests.RequestException:
-        return False
-
-# Functie om afbeeldingen in de repository te verwerken
-def update_readme_with_images():
-    readme_path = os.path.join(repo_path, 'README.md')
-    
-    # Open de README om te lezen
-    with open(readme_path, 'r', encoding='utf-8') as file:
-        readme_content = file.readlines()
-    
-    # Maak een lijst van alle afbeeldingen in je repository
+# Functie om alle afbeeldingen in je repository te verzamelen
+def get_image_files():
     image_files = []
-    for root, dirs, files in os.walk(repo_path):
-        for file in files:
-            if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):  # Voeg extra extensies toe als nodig
-                image_files.append(os.path.join(root, file))
-    
-    # Maak een string voor de nieuwe afbeeldingen die toegevoegd moeten worden
-    image_urls = ''
-    for image_file in image_files:
-        image_url = get_raw_url(image_file)  # Haal de juiste GitHub raw URL op
-        if url_exists(image_url):  # Controleer of de URL bestaat
-            image_urls += f'| ![Image]({image_url}) '  # Voeg de markdown voor elke afbeelding toe
-        else:
-            print(f"URL bestaat niet: {image_url}")  # Meld als de URL niet bestaat
-    
-    # Vervang de regel met "Column 1 | Column 2 | Column 3 | Column 4 |" door de nieuwe afbeeldingen
-    updated_content = ""
-    image_index = 0
-    for line in readme_content:
-        # Als we de regel met de kolommen vinden, voegen we de afbeeldingen toe
-        if "| Column 1 | Column 2 | Column 3 | Column 4 |" in line:
-            for i in range(0, len(image_files), 4):  # Voeg maximaal 4 afbeeldingen per regel toe
-                row = ''
-                for j in range(i, min(i + 4, len(image_files))):
-                    image_url = get_raw_url(image_files[j])
-                    if url_exists(image_url):  # Controleer of de URL bestaat
-                        row += f'| ![Image]({image_url}) '
-                    else:
-                        print(f"URL bestaat niet: {image_url}")  # Meld als de URL niet bestaat
-                updated_content += row + "\n"
-        else:
-            updated_content += line
-    
-    # Schrijf de bijgewerkte inhoud naar de README
-    with open(readme_path, 'w', encoding='utf-8') as file:
-        file.write(updated_content)
+    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, etc.)
+    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif'):
+        image_files.extend(glob.glob(os.path.join(repo_path, '**', ext), recursive=True))
+    return image_files
 
-# Uitvoeren van de functie om de README bij te werken
+# Functie om de afbeelding URL's te genereren
+def generate_image_urls(image_files):
+    urls = []
+    for image_file in image_files:
+        # Zorg dat spaties in de paden worden omgezet naar %20 voor de URL
+        url_path = image_file.replace(repo_path, '').replace(os.sep, '/').lstrip('/')
+        url_path = url_path.replace(' ', '%20')  # Vervang spaties door %20
+        url = f"https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/{url_path}"
+        urls.append(url)
+    return urls
+
+# Functie om de content van de README.md te lezen
+def read_readme():
+    with open(readme_path, 'r', encoding='utf-8') as file:
+        return file.readlines()
+
+# Functie om de gewijzigde inhoud weer naar de README.md te schrijven
+def update_readme(content):
+    with open(readme_path, 'w', encoding='utf-8') as file:
+        file.writelines(content)
+
+# Functie om de README.md bij te werken met de nieuwe afbeeldingen
+def update_readme_with_images():
+    # Lees de bestaande inhoud van de README
+    readme_lines = read_readme()
+
+    # Tekst die bovenaan moet blijven
+    top_text = """# Meal's Wallpaper collection
+
+## Copyright
+
+### AI Generated
+
+Free to use without mentioning me or the AI I used.
+
+### I found
+
+Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images or who but yea...)
+
+### Selfmade
+
+Free to use but please, please, for the sake of god, mention me, Mealman1551.
+
+### What if Selfmade images are not mentioned with my name (Mealman1551)?
+
+I don't make a lawsuit of it, but I'm the original creator so yea... Be decent and do me a favor and mention me as "Mealman1551".
+
+## Updates
+
+The wallpapers are updated regularly.
+
+###### © 2025 Mealman1551
+"""
+
+    # Haal alle afbeeldingen op uit de repository
+    image_files = get_image_files()
+
+    # Genereer de URL's voor de afbeeldingen
+    image_urls = generate_image_urls(image_files)
+
+    # Maak een nieuwe sectie voor de afbeeldingen in de kolommen
+    columns = "| Column 1 | Column 2 | Column 3 | Column 4 |\n|---------|---------|---------|---------|\n"
+    rows = []
+    for i in range(0, len(image_urls), 4):
+        row = " | ".join([f"![Image]({image_urls[j]})" for j in range(i, min(i+4, len(image_urls)))])
+        rows.append(f"{row} |\n")
+
+    # Combineer de top tekst en de nieuwe afbeelding kolommen
+    updated_content = [top_text] + [columns] + rows
+
+    # Voeg eventueel de overige inhoud uit de README toe
+    updated_content += [line for line in readme_lines if line not in top_text]
+
+    # Werk de README bij met de nieuwe inhoud
+    update_readme(updated_content)
+
+# Voer de update uit
 update_readme_with_images()
+print("README.md is bijgewerkt met de nieuwste afbeeldingen!")
