@@ -1,6 +1,6 @@
 import requests
 import os
-from urllib.parse import quote_plus  # Gebruik quote_plus voor betere URL-encoding
+from urllib.parse import quote  # Gebruik quote voor standaard URL-encoding
 
 # Configuratie
 repo_owner = "mealman1551"
@@ -21,7 +21,7 @@ def get_image_urls():
             # Alleen afbeelding-bestanden (jpg, png, jpeg)
             if file['path'].endswith(('.jpg', '.png', '.jpeg')):
                 # Encodeer het pad om spaties en speciale tekens correct te verwerken
-                encoded_path = quote_plus(file['path'])
+                encoded_path = quote(file['path'])
                 raw_url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{encoded_path}"
                 image_urls.append(raw_url)
 
@@ -56,7 +56,7 @@ def update_readme(image_urls):
 
     # Zoek de eerste sectie van de README om de nieuwe inhoud toe te voegen
     # Dit voegt de markdown direct onder de bestaande tekst toe
-    readme_content.append(markdown_start)
+    readme_content.insert(1, markdown_start)  # Voeg de nieuwe inhoud bovenaan de readme in
 
     # Schrijf de bijgewerkte README.md
     with open(readme_path, "w", encoding="utf-8") as readme_file:
