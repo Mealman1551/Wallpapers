@@ -1,96 +1,61 @@
 import os
-import glob
+import re
+import requests
 
-# Pad naar je lokale GitHub repository
-repo_path = r"D:\Github Git Repo clones\Wallpapers"
+# Map van je lokale GitHub repository
+repo_path = "d:/Github Git Repo clones/Wallpapers"
 
-# Pad naar de README.md bestand
-readme_path = os.path.join(repo_path, 'README.md')
+# Bestandspad van de README.md
+readme_path = os.path.join(repo_path, "README.md")
 
-# Functie om alle afbeeldingen in je repository te verzamelen
-def get_image_files():
-    image_files = []
-    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, etc.)
-    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif'):
-        image_files.extend(glob.glob(os.path.join(repo_path, '**', ext), recursive=True))
-    return image_files
+# Functie om alle afbeeldingsbestanden te vinden in de repository
+def find_images_in_repo(repo_path):
+    image_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.webp']
+    image_paths = []
 
-# Functie om de afbeelding URL's te genereren
-def generate_image_urls(image_files):
-    urls = []
-    for image_file in image_files:
-        # Zorg dat spaties in de paden worden omgezet naar %20 voor de URL
-        url_path = image_file.replace(repo_path, '').replace(os.sep, '/').lstrip('/')
-        url_path = url_path.replace(' ', '%20')  # Vervang spaties door %20
-        url = f"https://raw.githubusercontent.com/mealman1551/wallpapers/main/{url_path}"
-        urls.append(url)
-    return urls
+    for root, dirs, files in os.walk(repo_path):
+        for file in files:
+            if any(file.endswith(ext) for ext in image_extensions):
+                image_paths.append(os.path.join(root, file))
+    
+    return image_paths
 
-# Functie om de content van de README.md te lezen
-def read_readme():
-    with open(readme_path, 'r', encoding='utf-8') as file:
-        return file.readlines()
+# Functie om de inhoud van de README.md bij te werken
+def update_readme_with_images(readme_path, image_urls):
+    with open(readme_path, "r", encoding="utf-8") as file:
+        readme_content = file.read()
+    
+    # Zoek de bestaande afbeeldingen en vervang deze
+    image_table_pattern = r"(\|.*\|(?:\n|\r\n)*)"
+    current_images = re.findall(image_table_pattern, readme_content)
+    
+    # Maak nieuwe kolommen met afbeeldingen
+    columns = ['Column 1', 'Column 2', 'Column 3', 'Column 4']
+    new_table = "| " + " | ".join(columns) + " |\n| " + " | ".join(['---' for _ in columns]) + " |\n"
+    image_counter = 0
 
-# Functie om de gewijzigde inhoud weer naar de README.md te schrijven
-def update_readme(content):
-    with open(readme_path, 'w', encoding='utf-8') as file:
-        file.writelines(content)
+    for img_path in image_urls:
+        # Vervang spaties door %20 voor geldige URL
+        img_path = img_path.replace(' ', '%20')
+        image_url = f"https://raw.githubusercontent.com/mealman1551/wallpapers/main/{img_path.replace(repo_path + os.sep, '').replace(os.sep, '/')}"
 
-# Functie om de README.md bij te werken met de nieuwe afbeeldingen
-def update_readme_with_images():
-    # Lees de bestaande inhoud van de README
-    readme_lines = read_readme()
+        if image_counter % len(columns) == 0 and image_counter != 0:
+            new_table += "\n"
+        
+        new_table += f"| ![Image]({image_url}) "
+        image_counter += 1
 
-    # Tekst die bovenaan moet blijven
-    top_text = """# Meal's Wallpaper collection
+    # Plaats de nieuwe afbeeldingen bovenaan de README, onder de bestaande tekst
+    before_images_content = readme_content.split('| Column 1 |')[0]  # Neem de tekst boven de afbeeldingstabel
+    updated_readme_content = before_images_content + new_table + '\n' + ''.join(current_images[1:])  # Voeg de nieuwe tabel toe
 
-## Copyright
+    # Sla de bijgewerkte README op
+    with open(readme_path, "w", encoding="utf-8") as file:
+        file.write(updated_readme_content)
+    print("README.md is bijgewerkt met nieuwe afbeeldingen.")
 
-### AI Generated
+# Haal alle afbeeldingsbestanden uit de repository
+image_files = find_images_in_repo(repo_path)
 
-Free to use without mentioning me or the AI I used.
-
-### I found
-
-Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images or who but yea...)
-
-### Selfmade
-
-Free to use but please, please, for the sake of god, mention me, Mealman1551.
-
-### What if Selfmade images are not mentioned with my name (Mealman1551)?
-
-I don't make a lawsuit of it, but I'm the original creator so yea... Be decent and do me a favor and mention me as "Mealman1551".
-
-## Updates
-
-The wallpapers are updated regularly.
-
-###### © 2025 Mealman1551
-"""
-
-    # Haal alle afbeeldingen op uit de repository
-    image_files = get_image_files()
-
-    # Genereer de URL's voor de afbeeldingen
-    image_urls = generate_image_urls(image_files)
-
-    # Maak een nieuwe sectie voor de afbeeldingen in de kolommen
-    columns = "| Column 1 | Column 2 | Column 3 | Column 4 |\n|---------|---------|---------|---------|\n"
-    rows = []
-    for i in range(0, len(image_urls), 4):
-        row = " | ".join([f"![Image]({image_urls[j]})" for j in range(i, min(i+4, len(image_urls)))])
-        rows.append(f"{row} |\n")
-
-    # Combineer de top tekst en de nieuwe afbeelding kolommen
-    updated_content = [top_text] + [columns] + rows
-
-    # Voeg eventueel de overige inhoud uit de README toe
-    updated_content += [line for line in readme_lines if line not in top_text]
-
-    # Werk de README bij met de nieuwe inhoud
-    update_readme(updated_content)
-
-# Voer de update uit
-update_readme_with_images()
-print("README.md is bijgewerkt met de nieuwste afbeeldingen!")
+# Update de README met de nieuwe afbeeldingen
+update_readme_with_images(readme_path, image_files)
