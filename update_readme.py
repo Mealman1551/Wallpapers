@@ -1,6 +1,5 @@
 import os
 import glob
-import requests
 
 # Pad naar je lokale GitHub repository
 repo_path = r"D:\Github Git Repo clones\Wallpapers"
@@ -11,8 +10,8 @@ readme_path = os.path.join(repo_path, 'README.md')
 # Functie om alle afbeeldingen in je repository te verzamelen
 def get_image_files():
     image_files = []
-    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, etc.)
-    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif'):
+    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, gif, bmp, etc.) in de volledige repository
+    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif', '*.bmp'):
         image_files.extend(glob.glob(os.path.join(repo_path, '**', ext), recursive=True))
     return image_files
 
@@ -53,7 +52,7 @@ Free to use without mentioning me or the AI I used.
 
 ### I found
 
-Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images or who but yea...)
+Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images of who but yea...)
 
 ### Selfmade
 
@@ -76,15 +75,11 @@ The wallpapers are updated regularly.
     # Genereer de URL's voor de afbeeldingen
     image_urls = generate_image_urls(image_files)
 
-    # Maak een nieuwe sectie voor de afbeeldingen in de kolommen
-    columns = "| Column 1 | Column 2 | Column 3 | Column 4 |\n|---------|---------|---------|---------|\n"
-    rows = []
-    for i in range(0, len(image_urls), 4):
-        row = " | ".join([f"![Image]({image_urls[j]})" for j in range(i, min(i+4, len(image_urls)))])
-        rows.append(f"{row} |\n")
+    # Maak de sectie voor afbeeldingen (centrale kolom)
+    image_section = "| ![Image](" + ")\n| ![Image](".join(image_urls) + ")\n"
 
-    # Combineer de top tekst en de nieuwe afbeelding kolommen
-    updated_content = [top_text] + [columns] + rows
+    # Combineer de top tekst en de nieuwe afbeelding sectie
+    updated_content = [top_text] + [image_section]
 
     # Voeg eventueel de overige inhoud uit de README toe
     updated_content += [line for line in readme_lines if line not in top_text]
