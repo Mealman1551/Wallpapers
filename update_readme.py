@@ -1,5 +1,6 @@
 import os
 import glob
+import requests
 
 # Pad naar je lokale GitHub repository
 repo_path = r"D:\Github Git Repo clones\Wallpapers"
@@ -10,8 +11,8 @@ readme_path = os.path.join(repo_path, 'README.md')
 # Functie om alle afbeeldingen in je repository te verzamelen
 def get_image_files():
     image_files = []
-    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, gif, bmp, etc.) in de volledige repository
-    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif', '*.bmp'):
+    # Zoek naar alle afbeeldingsbestanden (jpeg, png, jpg, etc.)
+    for ext in ('*.jpeg', '*.jpg', '*.png', '*.gif'):
         image_files.extend(glob.glob(os.path.join(repo_path, '**', ext), recursive=True))
     return image_files
 
@@ -36,10 +37,21 @@ def update_readme(content):
     with open(readme_path, 'w', encoding='utf-8') as file:
         file.writelines(content)
 
-# Functie om de README.md bij te werken met de nieuwe afbeeldingen
+# Functie om de README.md volledig bij te werken met de nieuwe afbeeldingen
 def update_readme_with_images():
-    # Lees de bestaande inhoud van de README
-    readme_lines = read_readme()
+    # Lees de bestaande inhoud van de README (hoeft niet meer, we gaan de inhoud overschrijven)
+    # Lees de afbeeldingen op uit de repository
+    image_files = get_image_files()
+
+    # Genereer de URL's voor de afbeeldingen
+    image_urls = generate_image_urls(image_files)
+
+    # Maak een nieuwe sectie voor de afbeeldingen in de kolommen
+    columns = "| Column 1 |\n|---------|\n"
+    rows = []
+    for i in range(0, len(image_urls), 1):  # 1 afbeelding per rij (centrale kolom)
+        row = f"![Image]({image_urls[i]})"
+        rows.append(f"{row} |\n")
 
     # Tekst die bovenaan moet blijven
     top_text = """# Meal's Wallpaper collection
@@ -52,7 +64,7 @@ Free to use without mentioning me or the AI I used.
 
 ### I found
 
-Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images of who but yea...)
+Free to use without mentioning me, however the images come from sites like: Unsplash, Pixabay, Flickr, Windows Spotlight, Pexels and more, some images requires mentioning of the official creator (idk what images or who but yea...)
 
 ### Selfmade
 
@@ -69,24 +81,12 @@ The wallpapers are updated regularly.
 ###### © 2025 Mealman1551
 """
 
-    # Haal alle afbeeldingen op uit de repository
-    image_files = get_image_files()
+    # Combineer de top tekst en de nieuwe afbeelding kolom
+    updated_content = [top_text] + [columns] + rows
 
-    # Genereer de URL's voor de afbeeldingen
-    image_urls = generate_image_urls(image_files)
-
-    # Maak de sectie voor afbeeldingen (centrale kolom)
-    image_section = "| ![Image](" + ")\n| ![Image](".join(image_urls) + ")\n"
-
-    # Combineer de top tekst en de nieuwe afbeelding sectie
-    updated_content = [top_text] + [image_section]
-
-    # Voeg eventueel de overige inhoud uit de README toe
-    updated_content += [line for line in readme_lines if line not in top_text]
-
-    # Werk de README bij met de nieuwe inhoud
+    # Werk de README bij met de nieuwe inhoud (dit overschrijft de oude inhoud)
     update_readme(updated_content)
 
 # Voer de update uit
 update_readme_with_images()
-print("README.md is bijgewerkt met de nieuwste afbeeldingen!")
+print("README.md is volledig bijgewerkt met de nieuwste afbeeldingen!")
