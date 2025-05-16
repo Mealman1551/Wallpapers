@@ -47,7 +47,7 @@ def update_readme_with_images():
     image_urls = generate_image_urls(image_files)
 
     # Maak een nieuwe sectie voor de afbeeldingen in de kolommen
-    columns = "| Column 1 |\n|---------|\n"
+    columns = "| Wallpapers |\n|---------|\n"
     rows = []
     for i in range(0, len(image_urls), 1):  # 1 afbeelding per rij (centrale kolom)
         row = f"![Image]({image_urls[i]})"
