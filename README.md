@@ -699,6 +699,8 @@ The wallpapers are updated regularly.
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Abstract/this-wallpaper-is-not-available.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Abstract/wallhaven-x662v3_3840x2160.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Abstract/wp11058333.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/(open)SUSE/SLE%2015%20sp6.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/(open)SUSE/SLE%20lockscreen%2015%20sp6.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Arch/Arch%20Lisa%20style.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Arch/ArchGradient.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Arch/blue_arch_nowatermark.png) |
@@ -744,7 +746,6 @@ The wallpapers are updated regularly.
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Ubuntu/UbuntuGradient.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Ubuntu/warty-final-ubuntu.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Ubuntu/22.04/Jammy-Jellyfish_WP_4096x2304_Grey.png) |
-![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Ubuntu/22.04/ubuntu-default-greyscale-wallpaper.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Ubuntu/22.04/warty-final-ubuntu.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Some%20pixelated%20wallpapers/gaaf.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Some%20pixelated%20wallpapers/sunset.png) |
