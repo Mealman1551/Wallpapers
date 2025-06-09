@@ -85,6 +85,8 @@ I don't make a lawsuit of it, but I'm the original creator so yea... Be decent a
 
 The wallpapers are updated regularly.
 
+---
+
 ###### © 2025 Mealman1551
 """
 
@@ -97,3 +99,4 @@ The wallpapers are updated regularly.
 # Voer de update uit
 update_readme_with_images()
 print("README.md is volledig bijgewerkt met de nieuwste afbeeldingen!")
+input("Press Enter to exit...")
