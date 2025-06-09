@@ -736,7 +736,9 @@ The wallpapers are updated regularly.
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%20username_.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/debian11bullseye1.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%20Catppuccin.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/trixie-final-1920x1080-with-logo-bottom.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/debian_grey_swirl.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/cathode%20trixie%20wallaper.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/debian%20landscape.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Wallpaper1.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%20glow.png) |
@@ -745,6 +747,7 @@ The wallpapers are updated regularly.
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/debian11bullseye3.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/gnome-splash-curves.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%2013%20Trixie%20Painting%203840x2160%204k%20wallpaper.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/trixie-final-1920x1080-with-logo-center.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/gnome-debian-sid-wp.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Emerald_plymouth.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/moreblue-orbit-grub.png) |
@@ -755,6 +758,7 @@ The wallpapers are updated regularly.
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/gnome-debian-sid-splash.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%20Lesbian1.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/nightly-wallpaper.png) |
+![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/debian%20trixie%20painting%201920x1080.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/Debian/Debian%20Lesbian2.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/(open)SUSE/SLE%20lockscreen%2015%20sp6.png) |
 ![Image](https://raw.githubusercontent.com/Mealman1551/Wallpapers/refs/heads/main/I%20found/Linux/(open)SUSE/SLE%2015%20sp6.png) |
