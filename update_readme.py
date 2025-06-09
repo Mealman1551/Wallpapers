@@ -2,8 +2,15 @@ import os
 import glob
 import requests
 
+operating_system = os.name
+
+
 # Pad naar je lokale GitHub repository
-repo_path = r"D:\Github Git Repo clones\Wallpapers"
+if operating_system == 'posix':
+    # Voor Linux
+    repo_path = r"/home/nathan/Wallpapers"
+else:
+    repo_path = r"D:\Github Git Repo clones\Wallpapers"
 
 # Pad naar de README.md bestand
 readme_path = os.path.join(repo_path, 'README.md')
