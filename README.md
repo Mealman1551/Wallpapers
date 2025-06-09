@@ -22,6 +22,8 @@ I don't make a lawsuit of it, but I'm the original creator so yea... Be decent a
 
 The wallpapers are updated regularly.
 
+---
+
 ###### © 2025 Mealman1551
 | Wallpapers |
 |---------|
